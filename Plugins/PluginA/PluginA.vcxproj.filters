@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{aa564b76-32dc-48c7-b189-353af066de5f}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="MFC support">
+      <UniqueIdentifier>{50725387-882d-4378-bd8b-e78326d1b84f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{758ea1f2-023c-48ef-8b57-1cd79f12e5d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PluginA.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutBox.h">
+      <Filter>MFC support</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginAApp.h">
+      <Filter>MFC support</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginA.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutBox.cpp">
+      <Filter>MFC support</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginAApp.cpp">
+      <Filter>MFC support</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginA.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\PluginA.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PluginA.def">
+      <Filter>Misc</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
