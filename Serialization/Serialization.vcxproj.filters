@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Game entities">
+      <UniqueIdentifier>{59da562a-54a7-4761-be79-0e473953f81d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EntityFactory.cpp">
+      <Filter>Game entities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCamera.cpp">
+      <Filter>Game entities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEntity.cpp">
+      <Filter>Game entities</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressTranslator.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="StreamFile.cpp" />
+    <ClCompile Include="StreamHelpers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EntityFactory.h">
+      <Filter>Game entities</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCamera.h">
+      <Filter>Game entities</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEntity.h">
+      <Filter>Game entities</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressTranslator.h" />
+    <ClInclude Include="Serializable.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="StreamFile.h" />
+  </ItemGroup>
+</Project>
