@@ -1,5 +1,8 @@
 ## C++
 
+# Prerequisites
+*.d
+
 # Compiled Object files
 *.slo
 *.lo
@@ -17,6 +20,7 @@
 
 # Fortran module files
 *.mod
+*.smod
 
 # Compiled Static libraries
 *.lai
@@ -51,11 +55,15 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
+[Ll]og/
 
-# Visual Studio 2015 cache/options directory
+# Visual Studio 2015/2017 cache/options directory
 .vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
+
+# Visual Studio 2017 auto generated files
+Generated\ Files/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -70,18 +78,28 @@ TestResult.xml
 [Rr]eleasePS/
 dlldata.c
 
-# DNX
+# Benchmark Results
+BenchmarkDotNet.Artifacts/
+
+# .NET Core
 project.lock.json
+project.fragment.lock.json
 artifacts/
 
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
 *_i.c
 *_p.c
 *_i.h
 *.ilk
 *.meta
 *.obj
+*.iobj
 *.pch
 *.pdb
+*.ipdb
 *.pgc
 *.pgd
 *.rsp
@@ -110,12 +128,17 @@ ipch/
 *.opensdf
 *.sdf
 *.cachefile
+*.VC.db
+*.VC.VC.opendb
 
 # Visual Studio profiler
 *.psess
 *.vsp
 *.vspx
 *.sap
+
+# Visual Studio Trace Files
+*.e2e
 
 # TFS 2012 Local Workspace
 $tf/
@@ -136,6 +159,14 @@ _TeamCity*
 
 # DotCover is a Code Coverage Tool
 *.dotCover
+
+#Axocover is a Code Coverage Tool
+.axoCover/*
+!.axoCover/settings.json
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
 
 # NCrunch
 _NCrunch_*
